@@ -17,4 +17,4 @@ def preprocess_raw_data(input_path, output_path):
     with open(output_path, "w") as f:
         json.dump(processed, f, indent=2)
 
-    print(f"✅ Preprocessed {len(processed)} samples saved to {output_path}")
+    print(f"Preprocessed {len(processed)} samples saved to {output_path}")
