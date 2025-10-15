@@ -27,8 +27,6 @@ By combining **DeepSpeed ZeRO-3**, **Fully Sharded Data Parallel (FSDP)** traini
 scalable-llm-optimization/
 ├── configs/         # Model, DeepSpeed, FSDP, LoRA configs
 ├── src/             # Training, inference, evaluation modules
-├── notebooks/       # Demos and analysis notebooks
-├── docs/            # Reports, architecture diagrams
 ├── requirements.txt
 ├── setup.py
 └── .gitignore
