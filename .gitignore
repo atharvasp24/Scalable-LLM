@@ -1,0 +1,29 @@
+# Python
+__pycache__/
+*.py[cod]
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+
+# Virtual Environments
+.env/
+.venv/
+env/
+venv/
+
+# Logs and checkpoints
+*.log
+checkpoints/
+wandb/
+runs/
+cache/
+output/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# OS files
+.DS_Store
+Thumbs.db
