@@ -1,0 +1,20 @@
+# Fully Sharded Data Parallel (FSDP) configuration
+
+use_mixed_precision: true
+mixed_precision_dtype: bf16
+
+fsdp_config:
+  sharding_strategy: "FULL_SHARD"       # Options: FULL_SHARD, SHARD_GRAD_OP
+  cpu_offload: false
+  forward_prefetch: true
+  use_orig_params: false
+  sync_module_states: true
+  limit_all_gathers: true
+  activation_checkpointing: true
+  auto_wrap_policy: "transformer_layer"
+  gradient_clipping: 1.0
+
+distributed:
+  backend: "nccl"
+  world_size: 4
+  timeout: 1800
